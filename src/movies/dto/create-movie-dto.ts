@@ -2,8 +2,6 @@ import { IsString, IsNumber, IsOptional } from 'class-validator';
 // 생성시 제약 규칙? 같은 건가
 
 export class CreateMovieDto{ 
-    @IsNumber()
-    readonly id: number; 
     @IsString()
     readonly title: string; 
     @IsNumber()
